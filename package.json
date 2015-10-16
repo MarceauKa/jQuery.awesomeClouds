@@ -1,0 +1,31 @@
+{
+  "name": "jquery.awesomeclouds",
+  "version": "0.1.0",
+  "description": "Plugin jQuery pour générer des petits nuages en overlay qui se baladent sur l'écran...",
+  "main": "jquery.awesomeclouds.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkibaTech/jQuery.awesomeClouds.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "cloud",
+    "dynamic",
+    "overlay",
+    "clouds",
+    "sprite"
+  ],
+  "author": "Marceau Ka <marceau@casals.fr> (https://marceau.casals.fr)",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/AkibaTech/jQuery.awesomeClouds/issues"
+  },
+  "homepage": "https://github.com/AkibaTech/jQuery.awesomeClouds#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "~0.4.0"
+  }
+}

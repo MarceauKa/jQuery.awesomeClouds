@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>jQuery.awesomeClouds</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style type="text/css">
+	html, body {
+		height: 100%;
+		min-height: 100%;
+	}
+	body {
+		padding-top: 70px;
+		background-color: rgba(238, 238, 238, 0.4);
+		overflow-x: hidden;
+	}
+	.cloud {
+		display: block;
+		position: absolute;
+		width: 73px;
+		height: 36px;
+		background-image: url('cloud.png');
+		background-repeat: no-repeat;
+		z-index: 1000;
+	}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">jQuery.awesomeClouds</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container" id="wrapper">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+				<div class="well">
+					<p class="lead text-center">Look! So many clouds here =)</p>
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="col-xs-12 col-sm-6">
+								<label>Frequency</label>
+								<input type="number" class="form-control" min="1" max="100" step="1" name="frequency" value="15" />
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<label>Ticks</label>
+								<div class="input-group">
+									<input type="number" class="form-control" min="1" max="20" step="1" name="ticks" value="10" />
+									<span class="input-group-addon"> x / sec</span>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-6 col-xs-offset-3">
+								<button id="updateSettings" class="btn btn-block btn-success">Update</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="../jquery.awesomeClouds.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var $clouds = $('body').awesomeClouds({
+				autoInit: true,
+				frequency: 15,
+				paddingTop: 100,
+				ticks: 10
+			});
+
+			$('#updateSettings').on('click', function(e){
+				e.preventDefault();
+
+				$clouds.updateFrequency($('input[name="frequency"]').val());
+				$clouds.updateTicks($('input[name="ticks"]').val());
+
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>
