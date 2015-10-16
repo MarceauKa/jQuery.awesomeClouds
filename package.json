@@ -1,6 +1,6 @@
 {
   "name": "jquery.awesomeclouds",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Plugin jQuery pour générer des petits nuages en overlay qui se baladent sur l'écran...",
   "main": "jquery.awesomeclouds.js",
   "scripts": {
