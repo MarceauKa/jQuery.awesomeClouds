@@ -4,7 +4,7 @@
  * @author 	Marceau Casals <marceau@casals.fr>
  * @doc 	https://github.com/AkibaTech/jQuery.awesomeClouds
  * @url 	https://marceau.casals.fr
- * @version 0.1.0
+ * @version 0.1.1
  *
  */
 ;(function($) {

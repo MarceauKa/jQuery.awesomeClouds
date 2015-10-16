@@ -2,6 +2,8 @@
 
 jQuery awesomeClouds est un plugin génial qui permet de gérérer tout plein de petits nuages (ou autres...) sur votre page HTML avec pein de paramètres.
 
+![alt tag](https://raw.githubusercontent.com/AkibaTech/jQuery.awesomeClouds/master/example/screenshot.png)
+
 ## Installation & utilisation type
 
 On insére le script dans son HTML,
@@ -72,7 +74,7 @@ Nombre de ticks par seconde. Nombre de fois par seconde ou le plugin va tenter d
 
 ### html (string)
 Le HTML à utiliser pour la gération du nuage
-> Par défaut : '<div class="cloud" />'
+> Par défaut : '\<div class\=\"cloud\" \/\>'
 
 ### paddingTop (int)
 Padding haut ou aucun nuage n'apparaitra. Sorte d'offset.
